@@ -1,0 +1,85 @@
+:root{
+    --primary--clr:#030629;
+    --secondary--clr:#04356F;
+    --light--clr:#DCD4F0;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    background-color: var(--primary--clr);
+    color: var(--light--clr);
+    overflow: hidden;
+}
+
+/*** flex direction : row
+*************************/
+.flex_r,.wrapper,.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*** container
+***************/
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 450px;
+}
+
+.hamza_image img{
+    width: 220px;
+    border-radius: 50%;
+    border: 7px solid var(--secondary--clr);
+}
+
+h1.name span{
+    color: var(--secondary--clr);
+}
+
+p.about{
+    width: 80%;
+    text-align: center;
+    font-size: 1.07rem;
+    line-height: 1.7;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper .media{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.wrapper .media img{
+    width: 35px;
+}
+
